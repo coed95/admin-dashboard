@@ -1,0 +1,289 @@
+* {
+    transition: transform 0.3s;
+}
+
+body {
+    display: grid;
+    font-family: "Roboto", sans-serif;
+    grid-template-columns: 1fr 5fr;
+    gap: 0em;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: -0.5em;
+}
+
+/* Sidebar */
+
+aside {
+    background-color: #0ea5e9;
+    margin-left: -0.5em;
+    margin-top: -0.5em;
+}
+
+.sidebar {
+    display: grid;
+    filter: invert(100%);
+    grid-template-rows: 0.1fr 1fr 1fr;
+    padding-left: 0;
+}
+
+.sidebar li img {
+    height: auto;
+    margin-right: 25px;
+    width: 2rem;
+}
+
+.sidebar li p {
+    font-size: 1rem;
+}
+
+.sidebar ul li {
+    align-items: center;
+    display: flex;
+    margin-left: 0;
+}
+
+.sidebar .branding li,
+.sidebar .dashboard li,
+.sidebar .navigation li {
+    cursor: pointer;
+}
+
+.sidebar .branding li:hover,
+.sidebar .dashboard li:hover,
+.sidebar .navigation li:hover {
+    color: black;
+    filter: invert(100%);
+    transform: scale(1.1);
+}
+
+.sidebar .branding li:hover,
+.sidebar .navigation li:hover {
+    transform: scale(1.1);
+}
+
+.sidebar .dashboard li img {
+    margin-left: -15px;
+    width: 4rem;
+}
+
+.sidebar .dashboard li p {
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+
+.sidebar .navigation li p, .sidebar .branding li p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+}
+
+/* Header */
+
+header {
+    box-shadow: 0em 1em 4em rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 210px;
+    width: auto;
+}
+
+header > div {
+    align-items: space-between;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .user-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    margin-left: 1em;
+}
+
+header .welcome {
+    display: flex;
+    margin-top: -2.5em;
+}
+
+.lower-header {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -2em;
+    margin-left: 1em;
+}
+
+.upper-header {
+    display: grid;
+    grid-template-columns: 3fr 1.3fr;
+    margin-left: 2em;
+}
+
+.avatar {
+    margin-top: 6em;
+    height: 6em;
+    width: 6em;
+}
+
+.avatar-min {
+    height: auto;
+    width: 5em;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 3.3fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1em;
+    margin-top: 5.5em;
+    margin-left: 20em;
+}
+
+.buttons button {
+    background-color: #0ea5e9;
+    border: 0;
+    border-radius: 2em;
+    color: #dcfce7;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.2em;
+    height: 2.8em;
+    width: 7.5em;
+}
+
+.buttons button:hover {
+    transform: scale(1.15);
+}
+
+.message {
+    margin-left: 1em;
+    margin-top: 6em;
+}
+
+.message h3 {
+    margin-top: -0.9em;
+}
+
+.notifications {
+    cursor: pointer;
+    margin-left: 4em;
+    margin-top: 1.2em;
+    height: auto;
+    width: 25px;
+}
+
+.notifications:hover {
+    transform: scale(1.5);
+}
+
+.search-bar {
+    margin-top: 0.7em;
+    margin-left: 0.2em;
+}
+
+.search-box {
+    background-color: #bae6fd;
+    border: none;
+    border-radius: 1.25em;
+    cursor: text;
+    font-size: 1em;
+    height: 2em;
+    margin-left: 0.7em;
+    margin-top: 0.6em;
+}
+
+.search-button {
+    background-image: url('./assets/header/search.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+}
+
+.username {
+    margin-left: -0.5em;
+}
+
+/* Section */
+
+section {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 2fr 1fr;
+    margin-left: 1.5em;
+}
+
+section .projects {
+    display: grid;
+    gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+section .project {
+    border-left: 0.5em solid #eab308;
+    border-radius: 0.4em;
+    box-shadow: 0em 2em 4em rgba(0, 0, 0, 0.3);
+    display: grid;
+    padding: 1.5em;
+}
+
+section .project-buttons {
+    display: flex;
+    gap: 1.5em;
+    justify-content: flex-end;
+}
+
+section .project-buttons img {
+    cursor: pointer;
+    height: auto;
+    width: 1.7rem;
+}
+
+section .project-buttons img:hover {
+    transform: scale(1.5);
+}
+
+section .announcements {
+    box-shadow: 0em 0em 0em rgba(0, 0, 0, 0.2);
+    display: grid;
+    gap: 0.5em;
+    width: 85%;
+}
+
+section .announcement {
+    box-shadow: 0em 1em 4em rgba(0, 0, 0, 0.3);
+    padding: 1em;
+}
+
+section .trending {
+    box-shadow: 0em 1em 4em rgba(0, 0, 0, 0.3);
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: repeat(4, 1fr);
+    justify-items: center;
+    padding: 1em;
+    width: 70%;
+}
+
+section .trending img {
+    margin-left: 2em;
+    height: auto;
+    width: 5em;
+}
+
+section .trending .description {
+    margin-left: -4em;
+}
+
+section .announcement p, section .trending .description p {
+    font-size: 0.9em;
+    margin-top: -15px;
+    opacity: 0.6;
+}
